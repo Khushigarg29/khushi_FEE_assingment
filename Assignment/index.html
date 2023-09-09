@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notepad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #524e52; /* Darker purple */
+        }
+
+        h3 {
+            margin: 20px;
+            font-size: 36px; /* Slightly smaller font size */
+            color: #ffffff; /* White text */
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Center content vertically */
+        }
+
+        .txtContent {
+            width: 600px;
+            height: 400px;
+            padding: 10px;
+            background-color: #29292b; /* Dark gray background */
+            color: white; /* White text */
+            border: none; /* Remove the border */
+            border-radius: 10px;
+            resize: none; /* Disable textarea resizing */
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px; /* Add some space between the textarea and buttons */
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            margin: 0 10px; /* Add some space between buttons */
+            color: black; /* White text */
+            background-color: white; /* Light purple */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Style the buttons on hover */
+        button:hover {
+            background-color: #a899a8; /* Slightly darker purple */
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h3>Notepad</h3>
+        <div class="container">
+            <div class="content">
+                <textarea class="txtContent" id="txtContent"></textarea>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="submit" id="btn1">Save</button>
+            <button type="reset" id="btn2">Clear</button>
+        </div>
+    </form>
+    <script src="notepad.js"></script>
+</body>
+</html>
